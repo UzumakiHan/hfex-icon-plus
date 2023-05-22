@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.1.3 (2023-05-22)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* build scripts ([caea063](https://github.com/UzumakiHan/hfex-icon-plus/commit/caea063a3f2c93f37cc92f67c5fa0bd2e16f14a4))
+
 ### 1.1.2 (2023-05-22)
 
 
