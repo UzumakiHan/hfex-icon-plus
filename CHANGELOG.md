@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.1.0 (2023-05-22)
+
+
+### ✨ Features | 新功能
+
+* hfex-icon图标库初始化 ([5add946](https://github.com/UzumakiHan/hfex-icon-plus/commit/5add946473c552f1c0c8069438cf587abddaf9ca))
+
 ## 1.3.0 (2023-05-22)
 
 
@@ -29,6 +36,3 @@ All notable changes to this project will be documented in this file. See [standa
 ### 🎫 Chores | 其他更新
 
 * **release:** 1.1.0 ([31d94eb](https://github.com/UzumakiHan/hfex-icon/commit/31d94eb))
-
-
-
