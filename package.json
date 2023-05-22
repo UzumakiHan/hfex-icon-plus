@@ -13,7 +13,7 @@
   "scripts": {
     "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0 -n ./changelog-option.js",
     "copy": "copyfiles .github/** src/*js src/vue/*vue icons/* iconify-json/* typings/* .gitignore .npmignore *.js *.tpl package.json *.md .versionrc dist",
-    "build": "npm run copy npm run changelog",
+    "build": "npm run copy",
     "gitname": "git config --global user.name 'UzumakiHan'",
     "gitemail": "git config --global user.email '1750263786@qq.com'",
     "release": "npm run gitname && npm run gitemail && standard-version",
