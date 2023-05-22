@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.1.4 (2023-05-22)
+
+
+### 👷‍ Build System | 构建
+
+* 修改构建逻辑 ([469c91a](https://github.com/UzumakiHan/hfex-icon-plus/commit/469c91ac526308a0626b229ab7071cc029039258))
+
 ### 1.1.3 (2023-05-22)
 
 
