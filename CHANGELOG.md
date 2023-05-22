@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.1.5 (2023-05-22)
+
+
+### ⚡ Performance Improvements | 性能优化
+
+* 删掉冗余文件和代码 ([7bb2d76](https://github.com/UzumakiHan/hfex-icon-plus/commit/7bb2d760f4bc1baa3761ea002ff979880ccfde2d))
+
 ### 1.1.4 (2023-05-22)
 
 
