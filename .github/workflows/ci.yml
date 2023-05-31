@@ -1,0 +1,42 @@
+# 整个流程的名字
+name: CI
+
+# 触发时机，在 main 分支 push 操作触发
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+# 任务
+jobs:
+  CIBUILD:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      # git config
+      - name: Git Config
+        run: |
+           git config --global user.email "1750263786@qq.com"
+           git config --global user.name "UzumakiHan"
+      # install
+      - name: Install dependencies
+        run: |
+           npm ci
+      
+      - uses: GoogleCloudPlatform/release-please-action@v3
+        id: release
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          release-type: node
+          package-name: standard-version
+          changelog-types: '[{"type": "chore", "section":"🎫 Chores | 其他更新", "hidden": false},{"type": "revert", "section":"⏪ Reverts | 回退", "hidden": false},{"type": "feat", "section": "✨ Features | 新功能", "hidden": false},{"type": "fix", "section": "🐛 Bug Fixes | Bug 修复", "hidden": false},{"type": "improvement", "section": "Feature Improvements", "hidden": false},{"type": "docs", "section":"📝 Documentation | 文档", "hidden": false},{"type": "style", "section":"💄 Styles | 风格", "hidden": false},{"type": "refactor", "section":"💄 Styles | 风格", "hidden": false},{"type": "perf", "section":"⚡ Performance Improvements | 性能优化", "hidden": false},{"type": "test", "section":"✅ Tests | 测试", "hidden": false},{"type": "build", "section":"👷‍ Build System | 构建", "hidden": false},{"type": "ci", "section":"🔧 Continuous Integration | CI 配置", "hidden":false}]' 
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      
+        

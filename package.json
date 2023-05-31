@@ -10,9 +10,6 @@
     "./iconify-json/hfex-icon.json": "./iconify-json/hfex-icon.json"
   },
   "types": "./typings/typing.d.ts",
-  "scripts": {
-    "release": "standard-version"
-  },
   "files": [
     "dist",
     "icons",
@@ -20,6 +17,9 @@
     "src",
     "iconify-json"
   ],
+  "scripts": {
+    "update":"node update.js -f https://at.alicdn.com/t/c/font_3941812_yu099e0269.svg"
+  },
   "keywords": [],
   "license": "ISC",
   "devDependencies": {
@@ -29,7 +29,6 @@
     "commander": "^10.0.0",
     "ejs": "^3.1.8",
     "lodash": "^4.17.21",
-    "standard-version": "^9.5.0",
     "svgpath": "^2.6.0",
     "unplugin-icons": "^0.15.3"
   }
