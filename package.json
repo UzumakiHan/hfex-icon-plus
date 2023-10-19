@@ -1,6 +1,6 @@
 {
   "name": "hfex-icon",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "hfex-icon图标库",
   "main": "./src/index.js",
   "author": "UzumakiHan",
