@@ -20,7 +20,15 @@
   "scripts": {
     "update": "node update.js -f https://at.alicdn.com/t/c/font_3941812_yu099e0269.svg"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:UzumakiHan/hfex-icon-plugin.git"
+  },
+  "keywords": [
+    "unplugin-icons",
+    "@iconify/tools",
+    "svgpath"
+  ],
   "license": "ISC",
   "devDependencies": {
     "@iconify/tools": "^2.2.6",

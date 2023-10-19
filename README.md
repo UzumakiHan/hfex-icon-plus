@@ -60,22 +60,53 @@ export default defineConfig({
 })
 ```
 ## 也可以通过hfex-icon-plugin 配置，hfex-icon-plugin是将以上plugin上的配置封装起来
+
+Use with [`hfex-icon-plugin`](https://github.com/UzumakiHan/hfex-icon-plugin)
+
 ## Install
 ```
 npm i hfex-icon-plugin -D
 ```
-## 在vue.config.js的plugins中配置(webpack)v
-## vite版本待更新.....
-```
-const HfexIconPlugin = require('hfex-icon-plugin')
+
+## Usage
+
+<details>
+<summary>vue+webpack</summary><br>
+
+For example in Vue:
+
+```js
+// vue.config.js
+const HfexIconPlugin = require('hfex-icon-plugin/webpack')
 module.exports = {
     configureWebpack:{
         plugins:[
-            ...HfexIconPlugin.plugins
+            HfexIconPlugin()
         ]
     }
 }
 ```
+
+</details>
+
+
+<details>
+<summary>vue+vite</summary><br>
+
+
+For example in Vite:
+
+```js
+// vite.config.ts
+import HfexIconPlugin from 'hfex-icon-plugin';
+export default defineConfig({
+    plugins:[
+        HfexIconPlugin()
+    ]
+})
+```
+</details>
+
 ## 在vue入口文件引入注册组件
 ```
 import HfexIcon from 'hfex-icon'
@@ -87,6 +118,7 @@ Vue.use(MfexIcon); //vue2
 ```
 <hfex-icon name="home" color="#999" size="80px"/>
 ```
+
 ## 效果展示
 ![Image text](https://raw.githubusercontent.com/UzumakiHan/static-files/master/images/hfex-icon-show.png)
 
@@ -98,7 +130,10 @@ Vue.use(MfexIcon); //vue2
 |   color   |  string  |    #000    |
 
 
+
+
 ## 方式二
+
 ## 配合unocss使用
 
 ## Install unocss
