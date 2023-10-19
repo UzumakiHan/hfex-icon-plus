@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.1](https://github.com/UzumakiHan/hfex-icon-plus/compare/v1.2.0...v1.2.1) (2023-10-19)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* 完善readme以及package.json ([f4196a3](https://github.com/UzumakiHan/hfex-icon-plus/commit/f4196a3de3e14b77f557e41d4fb16a936998fb45))
+
 ## [1.2.0](https://github.com/UzumakiHan/hfex-icon-plus/compare/v1.1.5...v1.2.0) (2023-05-31)
 
 
